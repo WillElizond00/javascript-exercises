@@ -41,19 +41,22 @@ document.body.appendChild(containerThree);
 
 let h2 = document.createElement("h2");
 h2.textContent = "This is my own div I made -Mocci"
+containerThree.appendChild(h2);
+containerThree.style.backgroundColor = "purple";
 
 window.onload = function(){
 const btn = document.querySelector("#btn");
-btn.onclick = () => alert("Hello World");
-btn.body.appendChild(btn);
-
-
+//btn.onclick = () => alert("Hello World");
+//Other method to use ^^
 btn.addEventListener('click', function(e){
-    console.log(e)
+    alert("Hello world");
+    console.log(e);
     console.log("The button was clicked!");
 
     console.log("The target element is:", e.target);
 });
 }
+
+document.body.appendChild(btn);
 
 
