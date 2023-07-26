@@ -1,5 +1,9 @@
+
+
+
 let container = document.createElement("div");
 container.id = "container";
+container.style.backgroundColor = ("grey")
 document.body.appendChild(container);
 
 let p = document.createElement("p");
@@ -10,6 +14,46 @@ container.appendChild(p);
 
 let h3 = document.createElement("h3");
 h3.textContent = "I'm a blue h3!";
-p.style.color = "blue";
+h3.style.color = "blue";
 
 container.appendChild(h3);
+
+
+let containerTwo = document.createElement("div");
+containerTwo.id = "containerTwo";
+containerTwo.style.border  = "solid black";
+containerTwo.style.backgroundColor = "pink";
+
+document.body.appendChild(containerTwo);
+
+let h1 = document.createElement("h1");
+h1.textContent = "I'm in a div";
+containerTwo.appendChild(h1);
+
+let p2 = document.createElement("p");
+p2.textContent = "ME TOO!";
+containerTwo.appendChild(p2);
+
+let containerThree = document.createElement("div");
+containerThree.style.border = "grey";
+containerThree.style.backgroundColor = "red";
+document.body.appendChild(containerThree);
+
+let h2 = document.createElement("h2");
+h2.textContent = "This is my own div I made -Mocci"
+
+window.onload = function(){
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World");
+btn.body.appendChild(btn);
+
+
+btn.addEventListener('click', function(e){
+    console.log(e)
+    console.log("The button was clicked!");
+
+    console.log("The target element is:", e.target);
+});
+}
+
+
