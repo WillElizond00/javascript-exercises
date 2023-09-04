@@ -41,11 +41,11 @@ describe('sum', () => {
 
 describe('multiply', () => {
 	test('multiplies two numbers', () => {
-		expect(calculator.multiply(2,4)).toBe(8);
+		expect(calculator.multiply([2,4])).toBe(8);
 	});
 
 	test('multiplies several numbers', () => {
-		expect(calculator.multiply(2,4,6,8,10,12,14)).toBe(645120);
+		expect(calculator.multiply([2,4,6,8,10,12,14])).toBe(645120);
 	});
 });
 
@@ -54,7 +54,7 @@ describe('power', () => {
 		expect(calculator.power(4,3)).toBe(64); // 4 to third power is 64
 	});
 });
-
+ 
 describe('factorial', () => {
 	test('computes the factorial of 0', () => {
 		expect(calculator.factorial(0)).toBe(1); // 0! = 1

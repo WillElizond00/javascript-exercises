@@ -6,7 +6,7 @@ return cleanedStr === reversedStr;
 
 };
 
-console.log(palidromes("racecar"));
+
 
 // Do not edit below this line
 module.exports = palindromes;

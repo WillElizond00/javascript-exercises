@@ -19,7 +19,7 @@ return array.reduce((accumulator, currentValue) => accumulator * currentValue, 1
 
 const power = function(base, exponent) {
 	return Math.pow(base, exponent);
-};
+}; 
 
 const factorial = function(n) {
 	if (n === 0){
